@@ -1,0 +1,22 @@
+# excelmatrix
+a trivial wrapper for openpyxl to import a matrix from excel
+
+convenience funtions for openpyxl:
+
+    testFilename = "export1.xlsx"
+    testSheetname = "Blatt1"
+    contentArray = [[u'1a', u'1b', u'1c', u'1d'], 
+                    [u'-', u'Col_1', u'Col_2', u'Col_3'], 
+                    [u'Row_1', u'w1', u'w2', u'u3'], 
+                    [u'Row_2', u'x1', u'x2', u'x3'], 
+                    [u'Row_3', u'y1', u'y2', u'y3']]
+    myExporter = exportXlsx()
+    myExporter.exportContentArrayToFile(testFilename,testSheetname,contentArray )
+    
+    testFilename = "export1.xlsx"
+    testSheetname = "Blatt1"
+    myImporter = importXlsx()
+    myContent = myImporter.areaBasedImportFromFile (testFilename,testSheetname,"A1:C2") 
+    pprint (myContent)
+
+    
