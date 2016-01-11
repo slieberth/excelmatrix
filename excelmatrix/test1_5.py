@@ -4,16 +4,15 @@ from  excelmatrix import writeMatrix,readMatrix
 
 testFilename = "export1.xlsx"
 testSheetname = "Blatt1"
-
 contentMatrix= [[u'1a', u'1b', u'1c', u'1d'], 
-                [u'-', u'Col_1', u'Col_2', u'Col_3'], 
-                [u'Row_1', u'w1', u'w2', u'u3'], 
-                [u'Row_2', u'x1', u'x2', u'x3'], 
-                [u'Row_3', u'y1', u'y2', u'y3']]
+                [u'2a', u'2b', u'2c', u'2d'], 
+                [u'3a', u'3b', u'3c', u'3d'], 
+                [u'4a', u'4b', u'4c', u'4d'], 
+                [u'5a', u'5b', u'5c', u'5d']]
 
 
 writeMatrix(testFilename,testSheetname,contentMatrix)
-myContent = readMatrix (testFilename,testSheetname,range="A3:D5")
+myContent = readMatrix (testFilename,testSheetname,range="A1:D5")
 pprint (myContent)
 myContent = readMatrix (testFilename,testSheetname,start="A3",cellsPerRow=4)
 pprint (myContent)
