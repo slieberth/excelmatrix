@@ -2,6 +2,7 @@ setup.py
 excelmatrix/__init__.py
 excelmatrix/excelmatrix.py
 excelmatrix/test1_4.py
+excelmatrix/test1_5.py
 excelmatrix.egg-info/PKG-INFO
 excelmatrix.egg-info/SOURCES.txt
 excelmatrix.egg-info/dependency_links.txt
