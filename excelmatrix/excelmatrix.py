@@ -4,7 +4,7 @@ __author__ = "Stefan Lieberth"
 __copyright__ = "Copyright 2015"
 __credits__ = [""]
 __license__ = "MIT/Expat"
-__version__ = "1.4"
+__version__ = "1.5"
 __maintainer__ = "Stefan Lieberth"
 __email__ = "stefan@lieberth.net"
 
@@ -114,7 +114,7 @@ class excelmatrix:
             while inSheet['%s%s'%(get_column_letter(column), row)].value:
                 lineArray = []
                 if numberOfCellsPerRow: 
-                    while column <= startColumn + numberOfCellsPerRow:
+                    while column <= startColumn + numberOfCellsPerRow - 1:
                         #print inSheet['%s%s'%(get_column_letter(column), row)].value
                         lineArray.append(inSheet['%s%s'%(get_column_letter(column), row)].value)
                         column += 1
